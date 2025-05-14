@@ -39,8 +39,8 @@ function App() {
             <div className="h-full flex flex-col justify-center items-center sm:m-10 relative bg-cover bg-center" style={{ backgroundImage: "url('/Mask.png')" }}>
                 <h1 className='font-bold text-2xl sm:text-base md:text-7xl text-center kanit-bold mb-4 md:mb-10 mt-20'>ช่วยให้น้องสอบติดมหาลัยชื่อดัง</h1>
                 <h1 className='font-bold text-2xl sm:text-base md:text-7xl text-center kanit-bold mb-4 md:mb-10'>ด้วยการสอน ตะลุยโจทย์ ที่ครอบคลุม</h1>
-                <h1 className='font-bold text-2xl sm:text-base md:text-7xl text-center kanit-bold mb-4 md:mb-20'>อนิเมชันคณิตศาสตร์</h1>
-                <h1 className='font-semibold text-2xl sm:text-base md:text-7xl text-center kanit-semibold'>คอร์สคณิตศาสตร์ A-Level 1</h1>
+                {/* <h1 className='font-bold text-2xl sm:text-base md:text-7xl text-center kanit-bold mb-4 md:mb-20'>อนิเมชันคณิตศาสตร์</h1> */}
+                <h1 className='font-semibold text-2xl sm:text-base md:text-7xl text-center kanit-semibold pt-5'>คอร์สคณิตศาสตร์ A-Level 1</h1>
                 <a href='#' className='kanit-medium text-white bg-tonedark1 pt-2 mt-10 pb-2 pr-4 pl-4 rounded-lg text-lg md:text-2xl'>สมัครเรียนวันนี้เลย</a>
             </div>
             {/* คอร์สนี้ได้อะไรบ้าง */}
@@ -137,7 +137,8 @@ function App() {
             </div>
             {/* ขอบคุณความคิดเห็นจากน้องๆและพี่ๆ */}
             <div>
-            <h2 className='text-center m-5 mt-10 text-3xl kanit-semibold'>ความคิดเห็นการสอน</h2>
+            <h2 className='text-center m-5 mt-10 text-3xl kanit-semibold'>
+ความคิดเห็นการสอน</h2>
             {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
             
             <Swiper
@@ -154,6 +155,8 @@ function App() {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
+                <SwiperSlide><img src="/IMG_2745.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/></SwiperSlide>
+                <SwiperSlide><img src="/IMG_3129.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/></SwiperSlide>
                 <SwiperSlide><img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/></SwiperSlide>
                 <SwiperSlide><img src="/image 5.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/></SwiperSlide>
                 <SwiperSlide><img src="/image 6.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/></SwiperSlide>
