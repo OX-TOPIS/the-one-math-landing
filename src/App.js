@@ -140,7 +140,7 @@ function App() {
             <h2 className='text-center m-5 mt-10 text-3xl kanit-semibold'>
 ความคิดเห็นการสอน</h2>
             {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
-            
+            {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
