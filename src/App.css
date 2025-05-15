@@ -40,6 +40,10 @@
   }
 }
 
+* {
+  font-family: "Kanit", sans-serif;
+}
+
 .kanit-thin {
   font-family: "Kanit", sans-serif;
   font-weight: 100;
