@@ -8,8 +8,7 @@ import "swiper/css/navigation";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { CiHeart } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-
+import { FaTiktok } from "react-icons/fa";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -24,7 +23,7 @@ function App() {
           <img
             src="/logo2 (2).png"
             alt="Description of image"
-            className="w-12 "
+            className="w-12 animate-spin-slow"
           />
           <h1 className="font-bold kanit-medium">The One Math Academy</h1>
         </div>
@@ -46,11 +45,8 @@ function App() {
       {/* <img src="/Mask.png" alt="Description of image" className="fixed top-0 left-1/2 sm:w-full md:w-5/6 transform -translate-x-1/2 object-contain z-[-1] mt-12 md:m-0" /> */}
 
       {/* LABEL SECTION */}
-      <div
-        className="h-full flex flex-col justify-center items-center relative bg-cover bg-center"
-        style={{ backgroundImage: "url('/Mask.png')" }}
-      >
-        <h1 className="font-bold text-3xl md:text-6xl  text-center kanit-bold mt-20">
+      <div className="h-full flex flex-col justify-center items-center relative bg-cover bg-center p-12 bg-[linear-gradient(to_top_right,_#00ADFE,_#9403FD,_#FF12DC,_#FFB912)]">
+        <h1 className="font-bold text-3xl md:text-6xl  text-center kanit-bold">
           ไม่เก่งเลข
         </h1>
         <h1 className="font-bold text-3xl md:text-6xl text-center kanit-bold">
@@ -68,7 +64,7 @@ function App() {
         <p className="font-semibold text-2xl md:text-2xl text-center kanit-semibold underline">
           คอร์สคณิตศาสตร์ประยุกต์ 1
         </p>
-        <div className="bg-tonelight1 w-full flex justify-center p-4">
+        <div className=" w-full flex justify-center pt-4">
           <a
             href="https://forms.gle/gfzxk6texJNjzvBj7"
             target="_blank"
@@ -102,78 +98,110 @@ function App() {
           คอร์สนี้ได้อะไรบ้าง ?
         </h1>
         <div
-          className="relative bg-cover bg-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4"
+          className="relative bg-cover bg-center"
           style={{ backgroundImage: "url('/bg-22.png')" }}
         >
-          {/* CARD */}
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (1).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">ปรับพื้นฐานก่อนเรียน</h2>
-            </div>
-            <p className="kanit-regular">
-              ถ้าน้องพื้นฐานน้อยกลัวเรียนไม่รู้เรื่อง ไม่ต้องกังวล พี่ปูพื้นฐานใหม่ให้หมด ตาม 13 บทที่จำเป็นที่ต้องรู้ก่อนเริ่มเรียน</p>
-            <img src="image 25.png" />
-          </div>
-          
-          <div className="justify-items-center flex flex-col justify-between bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div>
-              <div className="flex items-center justify-center gap-2">
-                <img src="/Frame (5).png" alt="Description1" className="w-7" />
-                <h2 className="kanit-semibold">เรียนได้จนกว่าจะสอบติด</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 max-w-[1200px] mx-auto">
+            {/* CARD */}
+            <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+              <div className="flex items-center gap-2">
+                <img src="/Frame (1).png" alt="Description1" className="w-7" />
+                <h2 className="kanit-semibold text-xl">ปรับพื้นฐานก่อนเรียน</h2>
               </div>
               <p className="kanit-regular">
-                ไม่มีอายุคอร์ส พี่จะส่งฟอร์มให้ยืนยันตัวตนทุกๆ 6 เดือน เช่นถ้าตอนนี้อยู่ม.4 ก็สามารถอยู่ในคอร์สได้จบจนม.6 เลยย
+                ถ้าน้องพื้นฐานน้อยกลัวเรียนไม่รู้เรื่อง ไม่ต้องกังวล
+                พี่ปูพื้นฐานใหม่ให้หมด ตาม 13
+                บทที่จำเป็นที่ต้องรู้ก่อนเริ่มเรียน
+              </p>
+              <img src="image 25.png" className="mt-4" />
+            </div>
+
+            <div className="justify-items-center flex flex-col bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+              <div>
+                <div className="flex items-center justify-center gap-2">
+                  <img
+                    src="/Frame (5).png"
+                    alt="Description1"
+                    className="w-7"
+                  />
+                  <h2 className="kanit-semibold text-xl">
+                    เรียนได้จนกว่าจะสอบติด
+                  </h2>
+                </div>
+                <p className="kanit-regular">
+                  ไม่มีอายุคอร์ส พี่จะส่งฟอร์มให้ยืนยันตัวตนทุกๆ 6 เดือน
+                  เช่นถ้าตอนนี้อยู่ม.4 ก็สามารถอยู่ในคอร์สได้จบจนม.6 เลยย
+                </p>
+              </div>
+              <img src="image 21.png" className="m-auto" />
+            </div>
+            <div className="justify-items-center flex flex-col bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+              <div>
+                <div className="flex items-center justify-center gap-2">
+                  <img
+                    src="/Frame (5).png"
+                    alt="Description1"
+                    className="w-7"
+                  />
+                  <h2 className="kanit-semibold text-xl">เอกสารการสอน(PDF)</h2>
+                </div>
+                <p className="kanit-regular">
+                  ได้รับครบทั้งพื้นฐาน เนื้อหาคณิตศาสตร์ ม.ปลาย
+                  ซึ่งจะมีการบ้านให้ฝึกทำ และตะลุยโจทย์ คณิตศาสตร์ประยุกต์ 1
+                </p>
+              </div>
+              <img src="image 22.png" className="m-auto" />
+            </div>
+            <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+              <div className="flex items-center gap-2">
+                <img src="/Frame (3).png" alt="Description1" className="w-7" />
+                <h2 className="kanit-semibold text-xl">
+                  ตะลุยโจทย์ข้อสอบเก่า A-Level 1
+                </h2>
+              </div>
+              <p className="kanit-regular">
+                สอนเทคนิคการแก้โจทย์รูปแบบที่เหมาะสมสำหรับโจทย์แต่ละข้อ
+                เพื่อให้น้องทำโจทย์ได้แม่นยำและรวดเร็วที่สุด
               </p>
             </div>
-            <img src="image 21.png" />
-          </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (5).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">เอกสารการสอน(PDF)</h2>
+            <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+              <div className="flex items-center gap-2">
+                <img src="/Frame (2).png" alt="Description1" className="w-7" />
+                <h2 className="kanit-semibold text-xl">
+                  เรียนเนื้อหาม.ปลายครบ 15 บท
+                </h2>
+              </div>
+              <p className="kanit-regular">
+                เรียนตั้งแต่เนื้อหา ไปจนถึง ตะลุยโจทย์ เรียนที่โรงเรียนไม่เข้าใจ
+                ไม่ต้องกังวล พี่สอนใหม่หมด
+              </p>
             </div>
-            <p className="kanit-regular">
-              ได้รับครบทั้งพื้นฐาน เนื้อหาคณิตศาสตร์ ม.ปลาย
-              ซึ่งจะมีการบ้านให้ฝึกทำ และตะลุยโจทย์ คณิตศาสตร์ประยุกต์ 1
-            </p>
-            <img src="image 22.png" />
-          </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (3).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">ตะลุยโจทย์ข้อสอบเก่า A-Level 1</h2>
+            <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+              <div className="flex items-center gap-2">
+                <img src="/Frame (1).png" alt="Description1" className="w-7" />
+                <h2 className="kanit-semibold text-xl">
+                  การบ้านท้ายบท ครบ 15 บท
+                </h2>
+              </div>
+              <p className="kanit-regular">
+                ในแต่ละน้องจะได้ฝึกทำโจทย์ระดับความยากคณิตศาสตร์ประยุกต์ 1
+                และยังมีโจทย์ปีเก่าๆที่พี่คัดมาแล้วว่า "ควรฝึก"
+              </p>
             </div>
-            <p className="kanit-regular">
-              สอนเทคนิคการแก้โจทย์รูปแบบที่เหมาะสมสำหรับโจทย์แต่ละข้อ เพื่อให้น้องทำโจทย์ได้แม่นยำและรวดเร็วที่สุด</p>
-          </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (2).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">เรียนเนื้อหาม.ปลายครบ 15 บท</h2>
+            <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+              <div className="flex items-center gap-2">
+                <img src="/Frame.png" alt="Description1" className="w-7" />
+                <h2 className="kanit-semibold text-xl">
+                  ปรึกษาได้ตลอดการเรียน
+                </h2>
+              </div>
+              <p className="kanit-regular">
+                ทำโจทย์ไม่เป็น เริ่มต้นไม่ถูก กังวลเรื่องการวางแผนเข้ามหาลัย
+                ปรึกษาพี่ได้โดยตรง พี่จะทำให้น้องไปต่อได้เอง
+                "อยู่ข้างๆจนกว่าจะสอบติด"
+              </p>
             </div>
-            <p className="kanit-regular">
-              เรียนตั้งแต่เนื้อหา ไปจนถึง ตะลุยโจทย์ เรียนที่โรงเรียนไม่เข้าใจ ไม่ต้องกังวล พี่สอนใหม่หมด
-            </p>
           </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (1).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">การบ้านท้ายบท ครบ 15 บท</h2>
-            </div>
-            <p className="kanit-regular">
-              ในแต่ละน้องจะได้ฝึกทำโจทย์ระดับความยากคณิตศาสตร์ประยุกต์ 1 และยังมีโจทย์ปีเก่าๆที่พี่คัดมาแล้วว่า "ควรฝึก"</p>
-          </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame.png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">ปรึกษาได้ตลอดการเรียน</h2>
-            </div>
-            <p className="kanit-regular">
-              ทำโจทย์ไม่เป็น เริ่มต้นไม่ถูก กังวลเรื่องการวางแผนเข้ามหาลัย ปรึกษาพี่ได้โดยตรง พี่จะทำให้น้องไปต่อได้เอง "อยู่ข้างๆจนกว่าจะสอบติด"</p>
-          </div>
-          
-          
         </div>
 
         <style jsx>{`
@@ -193,101 +221,82 @@ function App() {
         `}</style>
       </div>
       <div className="flex flex-col justify-center items-center">
-          <a
-            href="https://forms.gle/gfzxk6texJNjzvBj7"
-            target="_blank"
-            className="kanit-medium text-white bg-tonedark1 pt-2 m-2 pb-2 pr-4 pl-4 rounded-lg text-lg md:text-2xl"
-          >
-            สมัครเรียนวันนี้เลย
-          </a>
-        </div>
+        <a
+          href="https://forms.gle/gfzxk6texJNjzvBj7"
+          target="_blank"
+          className="kanit-medium text-white bg-tonedark1 pt-2 m-2 pb-2 pr-4 pl-4 rounded-lg text-lg md:text-2xl"
+        >
+          สมัครเรียนวันนี้เลย
+        </a>
+      </div>
       {/* ผู้สอน */}
       <div>
         <h1 className="text-center m-5 mt-10 text-3xl kanit-semibold">
           ผู้สอน อิงฟ้า อัญทิชา
         </h1>
-        <img
-          src="/Profile_image 1.png"
-          alt="Description of image"
-          className="w-10/12 max-w-[400px] m-auto border-spacing-2 border-green-100 mb-4"
-        />
-        <div className="bg-white p-4 rounded-3xl bg-opacity-60 text-left">
-          <div className="text-center">
-            <h1 className="kanit-semibold text-xl">ประสบการณ์สอน</h1>
-          </div>
-          <div className="mx-auto md:w-max">
-            <div className="flex items-center gap-2">
-              <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                    สอนนักศึกษาคณะคณิตศาสตร์ประกันภัย 
-                </p>
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                    มหาลัยวิทยาลัยมหิดล 
-                </p>
-              </div>
+        <div className="block lg:flex justify-center mx-auto max-w-[1200px]">
+          <img
+            src="/Profile_image 1.png"
+            alt="Description of image"
+            className="max-w-[400px] border-spacing-2 border-green-100 mb-4 lg:mb-0 mx-auto lg:mx-0 lg:mr-4"
+          />
+          <div className="bg-white p-4 rounded-3xl bg-opacity-60">
+            <div className="text-center">
+              <h1 className="kanit-semibold text-xl">ประสบการณ์สอน</h1>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  สอนนักเรียนมัธยมศึกษา ม.ปลาย
-                </p>
-              </div>
+            <div className="flex justify-center bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
+              <ul className="list-disc list-inside text-center space-y-4">
+                <li>สอนนักศึกษาคณะคณิตศาสตร์ประกันภัย มหาลัยวิทยาลัยมหิดล</li>
+                <li>สอนนักเรียนมัธยมศึกษา ม.ปลาย</li>
+              </ul>
             </div>
-          </div>
-          <br></br>
-          <div>
-            <h1 className="kanit-semibold text-xl text-center">
-              ประวัติผู้สอน
-            </h1>
-            <div className="mx-auto md:w-max">
-              
-              <div className="flex items-center gap-2">
-                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  จบการศึกษา คณะเทคโนโลยีสารสนเทศ
-                </p>
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  แขนงวิศกรรมซอฟแวร์ ลาดกระบัง (เกียรตินิยม) 
-                </p>
-                </div>
+            <br></br>
+            <div>
+              <h1 className="kanit-semibold text-xl text-center">
+                ประวัติผู้สอน
+              </h1>
+              <div className="flex justify-center bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
+                <ul className="list-disc list-inside text-center space-y-4">
+                  <li>
+                    จบการศึกษา คณะเทคโนโลยีสารสนเทศ แขนงวิศกรรมซอฟแวร์ ลาดกระบัง
+                    (เกียรตินิยม)
+                  </li>
+                  <li>รางวัลเหรียญทองฟิสิกส์สัปประยุทธ์</li>
+                  <li>สอบติดคณะบัญชีธรรมศาสตร์</li>
+                  <li>
+                    รางวัลรองชนะเลิศอันดับ 1
+                    แข่งขันด้วยโปรเจคการทดสอบประสิทธิภาพ ของระบบซื้อขายพันธบัตร
+                    ของธนาคารกสิกรไทย
+                  </li>
+                  <li>ปัจจุบันทำงานในตำแหน่ง Performance Test Engineer</li>
+                </ul>
               </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  รางวัลเหรียญทองฟิสิกส์สัปประยุทธ์
-                </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  สอบติดคณะบัญชีธรรมศาสตร์
-                </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  รางวัลรองชนะเลิศอันดับ 1 แข่งขันด้วยโปรเจคการทดสอบประสิทธิภาพ
-                  ของระบบซื้อขายพันธบัตร ของธนาคารกสิกรไทย
-                </p>
-                </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  ปัจจุบันทำงานในตำแหน่ง
-                </p>
-                <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  Performance Test Engineer
-                </p>
-                </div>
-              </div>
-        
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4 mx-auto max-w-[1200px]">
+          <img
+            src="it-kmitl.png"
+            className="w-full h-auto object-cover"
+            alt="Image 1"
+          />
+          <img
+            src="image.png"
+            className="w-full h-auto object-cover"
+            alt="Image 2"
+          />
+          <img
+            src="logo01.png"
+            className="w-full h-auto object-cover"
+            alt="Image 3"
+          />
+          <img
+            src="0.png"
+            className="w-full h-auto object-cover"
+            alt="Image 4"
+          />
+        </div>
+        <div className="flex flex-col justify-center items-center mt-4">
           <a
             href="https://forms.gle/gfzxk6texJNjzvBj7"
             target="_blank"
@@ -299,90 +308,72 @@ function App() {
       </div>
       {/* ขอบคุณความคิดเห็นจากน้องๆและพี่ๆ */}
       {/* <div> */}
-      {/* <h2 className="text-center m-5 mt-10 text-3xl kanit-semibold">
-          ความคิดเห็นการสอน
-        </h2> */}
+      <h2 className="text-center m-5 mt-10 text-3xl kanit-semibold">
+        ความคิดเห็นการสอน
+      </h2>
       {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
       {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
-      {/* <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={false}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 mx-auto max-w-[1200px]">
+        <img
+          src="review1.png"
+          className="w-full h-auto object-cover"
+          alt="Image 4"
+        />
+        <img
+          src="review2.png"
+          className="w-full h-auto object-cover my-auto"
+          alt="Image 4"
+        />
+        <img
+          src="review3.png"
+          className="w-full h-auto object-cover"
+          alt="Image 4"
+        />
+      </div>
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          el: ".custom-pagination",
+          clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className} w-2 h-2 rounded-full bg-gray-300 inline-block mx-1 transition-all duration-300"></span>`;
+          },
+        }}
+        navigation={false}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper max-w-[1200px] mt-4"
+        breakpoints={{
+          1280: { slidesPerView: 4 },
+          1024: { slidesPerView: 3 },
+          768: { slidesPerView: 2 },
+          0: { slidesPerView: 1 },
+        }}
+      >
+        {[
+          "/image 5.png",
+          "/image 6.png",
+          "/image 7.png",
+          "/image 8.png",
+          "/image 9.png",
+          "/image 10.png",
+        ].map((src, idx) => (
+          <SwiperSlide
+            key={idx}
+          >
             <img
-              src="/IMG_2745.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
+              src={src}
+              alt={`Slide ${idx + 1}`}
+              className="w-full h-auto object-cover"
             />
           </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="/IMG_3129.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="/image 3.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="/image 5.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="/image 6.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="/image 7.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="/image 8.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="/image 9.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img
-              src="/image 10.png"
-              alt="Description of image"
-              className="w-10/12 rounded-lg m-auto"
-            />
-          </SwiperSlide>
-        </Swiper> */}
-      {/* </div> */}
+        ))}
+      </Swiper>
+      <div className="custom-pagination mt-4 flex justify-center items-center" />
 
       {/* สมัครคอร์สเรียน */}
       <div className="px-2">
@@ -430,10 +421,7 @@ function App() {
               ฿1590
             </p>
             <div className="font-semibold text-xl mt-4 md:mt-0">
-              <p
-              
-              
-              >นี่คือโอกาสที่น้อง ๆ จะได้คะแนนคณิตสูง</p>
+              <p>นี่คือโอกาสที่น้อง ๆ จะได้คะแนนคณิตสูง</p>
               <div className="kanit-medium text-white bg-tonedark2 pt-2 m-2 pb-2 pr-4 pl-4 rounded-lg text-lg md:text-2xl text-center">
                 <a href="https://forms.gle/gfzxk6texJNjzvBj7" target="_blank">
                   สมัครเรียนวันนี้เลย !
@@ -445,22 +433,30 @@ function App() {
       </div>
 
       {/* footer */}
-      <div className="px-4 md:px-20 h-[600px] flex items-center justify-center">
-        <div className="my-10 rounded-md bg-white p-4 w-full">
+      <div className="flex items-center justify-center mt-10">
+        <div className="rounded-md bg-white p-4 w-full">
           <p className="font-semibold text-xl">The One Math Academy</p>
           <div className="md:flex md:justify-between items-center">
-          <div className="flex gap-4 items-center text-[#8987A1]">
-            <CiHeart />
-            <p>INGFAH ANTHICHA</p>
-          </div>
-          <div className="flex gap-4 mt-4 md:mt-0">
-            <a href="https://www.instagram.com/your_username" target="_blank" rel="noopener noreferrer">
+            <div className="flex gap-4 items-center text-[#8987A1]">
+              <CiHeart />
+              <p>INGFAH ANTHICHA</p>
+            </div>
+            <div className="flex gap-4 mt-4">
+              <a
+                href="https://www.instagram.com/ingfah.ap/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaInstagram className="text-2xl hover:text-pink-500 transition-colors duration-300" />
-            </a>
-            <a href="https://www.instagram.com/your_username" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin  className="text-2xl hover:text-blue-500 transition-colors duration-300" />
-            </a>
-          </div>
+              </a>
+              <a
+                href="https://www.tiktok.com/@ingfah_anthicha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTiktok className="text-2xl hover:text-[#25F4EE] transition-colors duration-300" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
