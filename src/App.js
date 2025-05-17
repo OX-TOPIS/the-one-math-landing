@@ -65,6 +65,9 @@ function App() {
           <p>เด็ก ม.ปลาย “ส่วนใหญ่” สอบไม่ติด เพราะ “คะแนนคณิต”</p>
           <p>แต่น้องไม่จำเป็นต้องเป็นหนึ่งในนั้น</p>
         </div>
+        <p className="font-semibold text-2xl md:text-2xl text-center kanit-semibold underline">
+          คอร์สคณิตศาสตร์ประยุกต์ 1
+        </p>
         <div className="bg-tonelight1 w-full flex justify-center p-4">
           <a
             href="https://forms.gle/gfzxk6texJNjzvBj7"
@@ -79,15 +82,15 @@ function App() {
         <p>ถ้าไม่เก่งคณิต → ต้องเริ่มจากพื้นฐาน</p>
         <div className="my-4">
           <div className="flex justify-center items-center gap-2 ">
-            <div className="bg-black h-1 w-1 rounded-full"></div>
+            {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
             <p>อย่ากระโดดตะลุยโจทย์ทันที</p>
           </div>
           <div className="flex justify-center items-center gap-2 ">
-            <div className="bg-black h-1 w-1 rounded-full"></div>
+            {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
             <p>เรียนใหม่ตั้งแต่พีชคณิตถึงตรีโกณ</p>
           </div>
           <div className="flex justify-center items-center gap-2 ">
-            <div className="bg-black h-1 w-1 rounded-full"></div>
+            {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
             <p>ทบทวนทุกสูตรสำคัญที่ออกสอบบ่อย</p>
           </div>
         </div>
@@ -109,54 +112,10 @@ function App() {
               <h2 className="kanit-semibold">ปรับพื้นฐานก่อนเรียน</h2>
             </div>
             <p className="kanit-regular">
-              เนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาดเนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาด
-            </p>
+              ถ้าน้องพื้นฐานน้อยกลัวเรียนไม่รู้เรื่อง ไม่ต้องกังวล พี่ปูพื้นฐานใหม่ให้หมด ตาม 13 บทที่จำเป็นที่ต้องรู้ก่อนเริ่มเรียน</p>
+            <img src="image 25.png" />
           </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (2).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">เรียนเนื้อหาม.ปลายครบ 15 บท</h2>
-            </div>
-            <p className="kanit-regular">
-              เนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาดเนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาด
-            </p>
-          </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (3).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">ตะลุยโจทย์ข้อสอบเก่า A-Level</h2>
-            </div>
-            <p className="kanit-regular">
-              เนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาดเนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาด
-            </p>
-          </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (1).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">การบ้านท้ายบท ครบ 15 บท</h2>
-            </div>
-            <p className="kanit-regular">
-              เนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาดเนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาด
-            </p>
-          </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame.png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">ปรึกษาได้ตลอดการเรียน</h2>
-            </div>
-            <p className="kanit-regular">
-              เนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาดเนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาด
-            </p>
-          </div>
-          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
-            <div className="flex items-center gap-2">
-              <img src="/Frame (5).png" alt="Description1" className="w-7" />
-              <h2 className="kanit-semibold">Math Animation</h2>
-            </div>
-            <p className="kanit-regular">
-              เนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาดเนื้อหาจะถูกซ่อนในหน้าจอขนาดเล็กและจะแสดงในหน้าจอขนาด
-            </p>
-          </div>
+          
           <div className="justify-items-center flex flex-col justify-between bg-white p-4 rounded-3xl bg-opacity-60 m-4">
             <div>
               <div className="flex items-center justify-center gap-2">
@@ -164,7 +123,7 @@ function App() {
                 <h2 className="kanit-semibold">เรียนได้จนกว่าจะสอบติด</h2>
               </div>
               <p className="kanit-regular">
-                พี่จะส่งฟอร์มให้ยืนยันตัวตนทุกๆ 6 เดือน
+                ไม่มีอายุคอร์ส พี่จะส่งฟอร์มให้ยืนยันตัวตนทุกๆ 6 เดือน เช่นถ้าตอนนี้อยู่ม.4 ก็สามารถอยู่ในคอร์สได้จบจนม.6 เลยย
               </p>
             </div>
             <img src="image 21.png" />
@@ -180,6 +139,41 @@ function App() {
             </p>
             <img src="image 22.png" />
           </div>
+          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+            <div className="flex items-center gap-2">
+              <img src="/Frame (3).png" alt="Description1" className="w-7" />
+              <h2 className="kanit-semibold">ตะลุยโจทย์ข้อสอบเก่า A-Level 1</h2>
+            </div>
+            <p className="kanit-regular">
+              สอนเทคนิคการแก้โจทย์รูปแบบที่เหมาะสมสำหรับโจทย์แต่ละข้อ เพื่อให้น้องทำโจทย์ได้แม่นยำและรวดเร็วที่สุด</p>
+          </div>
+          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+            <div className="flex items-center gap-2">
+              <img src="/Frame (2).png" alt="Description1" className="w-7" />
+              <h2 className="kanit-semibold">เรียนเนื้อหาม.ปลายครบ 15 บท</h2>
+            </div>
+            <p className="kanit-regular">
+              เรียนตั้งแต่เนื้อหา ไปจนถึง ตะลุยโจทย์ เรียนที่โรงเรียนไม่เข้าใจ ไม่ต้องกังวล พี่สอนใหม่หมด
+            </p>
+          </div>
+          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+            <div className="flex items-center gap-2">
+              <img src="/Frame (1).png" alt="Description1" className="w-7" />
+              <h2 className="kanit-semibold">การบ้านท้ายบท ครบ 15 บท</h2>
+            </div>
+            <p className="kanit-regular">
+              ในแต่ละน้องจะได้ฝึกทำโจทย์ระดับความยากคณิตศาสตร์ประยุกต์ 1 และยังมีโจทย์ปีเก่าๆที่พี่คัดมาแล้วว่า "ควรฝึก"</p>
+          </div>
+          <div className="justify-items-center bg-white p-4 rounded-3xl bg-opacity-60 m-4">
+            <div className="flex items-center gap-2">
+              <img src="/Frame.png" alt="Description1" className="w-7" />
+              <h2 className="kanit-semibold">ปรึกษาได้ตลอดการเรียน</h2>
+            </div>
+            <p className="kanit-regular">
+              ทำโจทย์ไม่เป็น เริ่มต้นไม่ถูก กังวลเรื่องการวางแผนเข้ามหาลัย ปรึกษาพี่ได้โดยตรง พี่จะทำให้น้องไปต่อได้เอง "อยู่ข้างๆจนกว่าจะสอบติด"</p>
+          </div>
+          
+          
         </div>
 
         <style jsx>{`
@@ -198,6 +192,15 @@ function App() {
           }
         `}</style>
       </div>
+      <div className="flex flex-col justify-center items-center">
+          <a
+            href="https://forms.gle/gfzxk6texJNjzvBj7"
+            target="_blank"
+            className="kanit-medium text-white bg-tonedark1 pt-2 m-2 pb-2 pr-4 pl-4 rounded-lg text-lg md:text-2xl"
+          >
+            สมัครเรียนวันนี้เลย
+          </a>
+        </div>
       {/* ผู้สอน */}
       <div>
         <h1 className="text-center m-5 mt-10 text-3xl kanit-semibold">
@@ -214,16 +217,21 @@ function App() {
           </div>
           <div className="mx-auto md:w-max">
             <div className="flex items-center gap-2">
-              <div className="bg-black h-1 w-1 rounded-full"></div>
-              <p className="kanit-regularw-full flex justify-items-center items-center ">
-                สอนนักศึกษามหาลัยวิทยาลัยมหิดล คณะคณิตศาสตร์ประกันภัย
-              </p>
+              <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
+                <p className="kanit-regularw-full flex justify-items-center items-center ">
+                    สอนนักศึกษาคณะคณิตศาสตร์ประกันภัย 
+                </p>
+                <p className="kanit-regularw-full flex justify-items-center items-center ">
+                    มหาลัยวิทยาลัยมหิดล 
+                </p>
+              </div>
             </div>
             <div className="flex items-center gap-2">
-              <div className="bg-black h-1 w-1 rounded-full"></div>
-              <p className="kanit-regularw-full flex justify-items-center items-center ">
-                สอนนักเรียนมัธยมศึกษา ม.ปลาย
-              </p>
+              <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
+                <p className="kanit-regularw-full flex justify-items-center items-center ">
+                  สอนนักเรียนมัธยมศึกษา ม.ปลาย
+                </p>
+              </div>
             </div>
           </div>
           <br></br>
@@ -232,31 +240,50 @@ function App() {
               ประวัติผู้สอน
             </h1>
             <div className="mx-auto md:w-max">
+              
               <div className="flex items-center gap-2">
-                <div className="bg-black h-1 w-1 rounded-full"></div>
+                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
+                <p className="kanit-regularw-full flex justify-items-center items-center ">
+                  จบการศึกษา คณะเทคโนโลยีสารสนเทศ
+                </p>
+                <p className="kanit-regularw-full flex justify-items-center items-center ">
+                  แขนงวิศกรรมซอฟแวร์ ลาดกระบัง (เกียรตินิยม) 
+                </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
                 <p className="kanit-regularw-full flex justify-items-center items-center ">
                   รางวัลเหรียญทองฟิสิกส์สัปประยุทธ์
                 </p>
+                </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="bg-black h-1 w-1 rounded-full"></div>
+                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
                 <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  สอบติดคณะบัญชีธรรมศาสตร์ และ คณะไอที ลาดกระบัง
+                  สอบติดคณะบัญชีธรรมศาสตร์
                 </p>
+                </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="bg-black h-1 w-1 rounded-full flex-shrink-0"></div>
-                <p className="kanit-regularw-full flex justify-items-center items-center">
+                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
+                <p className="kanit-regularw-full flex justify-items-center items-center ">
                   รางวัลรองชนะเลิศอันดับ 1 แข่งขันด้วยโปรเจคการทดสอบประสิทธิภาพ
                   ของระบบซื้อขายพันธบัตร ของธนาคารกสิกรไทย
                 </p>
+                </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="bg-black h-1 w-1 rounded-full"></div>
+                <div className="bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
                 <p className="kanit-regularw-full flex justify-items-center items-center ">
-                  ปัจจุบันทำงานในตำแหน่งวิศกรรมการทดสอบประสิทธิภาพของระบบซอฟแวร์
+                  ปัจจุบันทำงานในตำแหน่ง
                 </p>
+                <p className="kanit-regularw-full flex justify-items-center items-center ">
+                  Performance Test Engineer
+                </p>
+                </div>
               </div>
+        
             </div>
           </div>
         </div>
@@ -390,11 +417,11 @@ function App() {
             </div>
             <div className="flex items-center gap-2">
               <FaRegCircleCheck />
-              <p>เรียนเนื้อหาครบทุกบท</p>
+              <p>เรียนเนื้อหาครบทุกบทม.ปลาย</p>
             </div>
             <div className="flex items-center gap-2">
               <FaRegCircleCheck />
-              <p>ปรับพื้นฐานก่อนเรียน</p>
+              <p>ปรับพื้นฐานก่อนเรียน ด้วย 13 บทสำคัญ</p>
             </div>
           </div>
 
@@ -403,7 +430,10 @@ function App() {
               ฿1590
             </p>
             <div className="font-semibold text-xl mt-4 md:mt-0">
-              <p>นี่คือโอกาสที่น้อง ๆ จะสอบติดมหาลัยชื่อดัง</p>
+              <p
+              
+              
+              >นี่คือโอกาสที่น้อง ๆ จะได้คะแนนคณิตสูง</p>
               <div className="kanit-medium text-white bg-tonedark2 pt-2 m-2 pb-2 pr-4 pl-4 rounded-lg text-lg md:text-2xl text-center">
                 <a href="https://forms.gle/gfzxk6texJNjzvBj7" target="_blank">
                   สมัครเรียนวันนี้เลย !
@@ -418,11 +448,6 @@ function App() {
       <div className="px-4 md:px-20 h-[600px] flex items-center justify-center">
         <div className="my-10 rounded-md bg-white p-4 w-full">
           <p className="font-semibold text-xl">The One Math Academy</p>
-          <div className="py-6 text-[#8987A1]">
-            <p>text ...</p>
-            <p>text ...</p>
-            <p>text ...</p>
-          </div>
           <div className="md:flex md:justify-between items-center">
           <div className="flex gap-4 items-center text-[#8987A1]">
             <CiHeart />
