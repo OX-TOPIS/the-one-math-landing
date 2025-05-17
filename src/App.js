@@ -2,6 +2,7 @@ import "./App.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
+import { useState, useEffect } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -14,6 +15,24 @@ import { FaTiktok } from "react-icons/fa";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 function App() {
+  const [bgImage, setBgImage] = useState("");
+
+  useEffect(() => {
+    const updateBackground = () => {
+      if (window.innerWidth > 1024) {
+        setBgImage(
+          "linear-gradient(to top right, #00ADFE, #9403FD, #FF12DC, #FFB912)"
+        );
+      } else {
+        setBgImage("url('/Mask.png')");
+      }
+    };
+
+    updateBackground();
+    window.addEventListener("resize", updateBackground);
+
+    return () => window.removeEventListener("resize", updateBackground);
+  }, []);
   return (
     <div className="bg-tonelight1">
       {/* NAVBAR */}
@@ -45,7 +64,10 @@ function App() {
       {/* <img src="/Mask.png" alt="Description of image" className="fixed top-0 left-1/2 sm:w-full md:w-5/6 transform -translate-x-1/2 object-contain z-[-1] mt-12 md:m-0" /> */}
 
       {/* LABEL SECTION */}
-      <div className="h-full flex flex-col justify-center items-center relative bg-cover bg-center p-12 bg-[linear-gradient(to_top_right,_#00ADFE,_#9403FD,_#FF12DC,_#FFB912)]">
+      <div
+        className="h-full flex flex-col justify-center items-center relative bg-cover bg-center p-12"
+        style={{ backgroundImage: bgImage }}
+      >
         <h1 className="font-bold text-3xl md:text-6xl  text-center kanit-bold">
           ไม่เก่งเลข
         </h1>
@@ -256,45 +278,47 @@ function App() {
                 ประวัติผู้สอน
               </h1>
               <div className="flex justify-center bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-                <ul className="list-disc list-inside text-center space-y-4">
-                  <li>
-                    จบการศึกษา คณะเทคโนโลยีสารสนเทศ แขนงวิศกรรมซอฟแวร์ ลาดกระบัง
-                    (เกียรตินิยม)
-                  </li>
-                  <li>รางวัลเหรียญทองฟิสิกส์สัปประยุทธ์</li>
-                  <li>สอบติดคณะบัญชีธรรมศาสตร์</li>
-                  <li>
-                    รางวัลรองชนะเลิศอันดับ 1
-                    แข่งขันด้วยโปรเจคการทดสอบประสิทธิภาพ ของระบบซื้อขายพันธบัตร
-                    ของธนาคารกสิกรไทย
-                  </li>
-                  <li>ปัจจุบันทำงานในตำแหน่ง Performance Test Engineer</li>
-                </ul>
+                <div>
+                  <ul className="list-disc list-inside text-center space-y-4">
+                    <li>
+                      จบการศึกษา คณะเทคโนโลยีสารสนเทศ แขนงวิศกรรมซอฟแวร์
+                      ลาดกระบัง (เกียรตินิยม)
+                    </li>
+                    <li>รางวัลเหรียญทองฟิสิกส์สัปประยุทธ์</li>
+                    <li>สอบติดคณะบัญชีธรรมศาสตร์</li>
+                    <li>
+                      รางวัลรองชนะเลิศอันดับ 1
+                      แข่งขันด้วยโปรเจคการทดสอบประสิทธิภาพ
+                      ของระบบซื้อขายพันธบัตร ของธนาคารกสิกรไทย
+                    </li>
+                    <li>ปัจจุบันทำงานในตำแหน่ง Performance Test Engineer</li>
+                  </ul>
+                  <div className="grid grid-cols-4 gap-4 px-4 mx-auto mt-4">
+                    <img
+                      src="it-kmitl.png"
+                      className="w-full h-auto object-cover"
+                      alt="Image 1"
+                    />
+                    <img
+                      src="image.png"
+                      className="w-full h-auto object-cover"
+                      alt="Image 2"
+                    />
+                    <img
+                      src="logo01.png"
+                      className="w-full h-auto object-cover"
+                      alt="Image 3"
+                    />
+                    <img
+                      src="0.png"
+                      className="w-full h-auto object-cover"
+                      alt="Image 4"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-4 mx-auto max-w-[1200px]">
-          <img
-            src="it-kmitl.png"
-            className="w-full h-auto object-cover"
-            alt="Image 1"
-          />
-          <img
-            src="image.png"
-            className="w-full h-auto object-cover"
-            alt="Image 2"
-          />
-          <img
-            src="logo01.png"
-            className="w-full h-auto object-cover"
-            alt="Image 3"
-          />
-          <img
-            src="0.png"
-            className="w-full h-auto object-cover"
-            alt="Image 4"
-          />
         </div>
         <div className="flex flex-col justify-center items-center mt-4">
           <a
@@ -334,7 +358,7 @@ function App() {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 800,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -346,7 +370,7 @@ function App() {
         }}
         navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper max-w-[1200px] mt-4"
+        className="mySwiper max-w-[1200px] mt-4 !px-4"
         breakpoints={{
           1280: { slidesPerView: 4 },
           1024: { slidesPerView: 3 },
@@ -362,9 +386,7 @@ function App() {
           "/image 9.png",
           "/image 10.png",
         ].map((src, idx) => (
-          <SwiperSlide
-            key={idx}
-          >
+          <SwiperSlide key={idx}>
             <img
               src={src}
               alt={`Slide ${idx + 1}`}
@@ -421,7 +443,7 @@ function App() {
               ฿1590
             </p>
             <div className="font-semibold text-xl mt-4 md:mt-0">
-              <p>นี่คือโอกาสที่น้อง ๆ จะได้คะแนนคณิตสูง</p>
+              <p className="text-center">นี่คือโอกาสที่น้อง ๆ จะได้คะแนนคณิตสูง</p>
               <div className="kanit-medium text-white bg-tonedark2 pt-2 m-2 pb-2 pr-4 pl-4 rounded-lg text-lg md:text-2xl text-center">
                 <a href="https://forms.gle/gfzxk6texJNjzvBj7" target="_blank">
                   สมัครเรียนวันนี้เลย !
@@ -433,31 +455,34 @@ function App() {
       </div>
 
       {/* footer */}
-      <div className="flex items-center justify-center mt-10">
-        <div className="rounded-md bg-white p-4 w-full">
-          <p className="font-semibold text-xl">The One Math Academy</p>
-          <div className="md:flex md:justify-between items-center">
-            <div className="flex gap-4 items-center text-[#8987A1]">
-              <CiHeart />
-              <p>INGFAH ANTHICHA</p>
-            </div>
-            <div className="flex gap-4 mt-4">
-              <a
-                href="https://www.instagram.com/ingfah.ap/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram className="text-2xl hover:text-pink-500 transition-colors duration-300" />
-              </a>
-              <a
-                href="https://www.tiktok.com/@ingfah_anthicha"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaTiktok className="text-2xl hover:text-[#25F4EE] transition-colors duration-300" />
-              </a>
-            </div>
-          </div>
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between bg-white rounded-md p-4 w-full mt-10 gap-4">
+        {/* ซ้าย (บนมือถือจะอยู่บนสุดตรงกลาง) */}
+        <p className="font-semibold text-xl text-center md:text-left md:w-auto md:flex-1">
+          The One Math Academy
+        </p>
+
+        {/* กลาง */}
+        <div className="flex gap-4 items-center text-[#8987A1] justify-center md:justify-center md:w-auto md:flex-1 relative">
+          <CiHeart />
+          <p>INGFAH ANTHICHA</p>
+        </div>
+
+        {/* ขวา */}
+        <div className="flex gap-4 justify-center md:justify-end md:flex-1">
+          <a
+            href="https://www.instagram.com/ingfah.ap/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-2xl hover:text-pink-500 transition-colors duration-300" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@ingfah_anthicha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTiktok className="text-2xl hover:text-[#25F4EE] transition-colors duration-300" />
+          </a>
         </div>
       </div>
     </div>
