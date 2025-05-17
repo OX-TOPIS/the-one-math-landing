@@ -321,20 +321,15 @@ function App() {
       </h2>
       {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
       {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 mx-auto max-w-[1200px]">
+      <div className="grid md:grid-cols-2 gap-4 px-4 mx-auto max-w-[1200px]">
         <img
-          src="review1.png"
+          src="IMG_2594.jpg"
           className="w-full h-auto object-cover"
-          alt="Image 4"
-        />
-        <img
-          src="review2.png"
-          className="w-full h-auto object-cover my-auto"
           alt="Image 4"
         />
         <img
           src="review3.png"
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover my-auto"
           alt="Image 4"
         />
       </div>
