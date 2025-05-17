@@ -65,7 +65,7 @@ function App() {
 
       {/* LABEL SECTION */}
       <div
-        className="h-full flex flex-col justify-center items-center relative bg-cover bg-center py-12 px-4 bg-white lg:border-y-2 lg:border-y-black"
+        className="h-full flex flex-col justify-center items-center relative bg-center py-12 px-4 bg-white lg:border-y-2 lg:border-y-black"
         style={{ backgroundImage: bgImage, backgroundPosition: "center top" }}
       >
         <h1 className="font-bold text-3xl md:text-6xl  text-center kanit-bold">
@@ -235,6 +235,21 @@ function App() {
           สมัครเรียนวันนี้เลย
         </a>
       </div>
+       <style jsx>{`
+        /* เพิ่มแอนิเมชันสำหรับพื้นหลัง */
+        @keyframes rotateBackground {
+            0% {
+                background-position: center top;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        .bg-cover {
+            animation: rotateBackground 30s infinite linear;
+        }
+    `}</style>
       {/* ผู้สอน */}
       <div>
         <h1 className="text-center m-5 mt-10 text-3xl kanit-semibold">
