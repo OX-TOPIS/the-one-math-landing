@@ -449,7 +449,7 @@ function App() {
         {/* ขวา */}
         <div className="flex gap-4 justify-center md:justify-end md:flex-1">
           <a
-            href="https://www.instagram.com/ingfah.ap/"
+            href="https://www.instagram.com/ingfah_anthicha/"
             target="_blank"
             rel="noopener noreferrer"
           >
