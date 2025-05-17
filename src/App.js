@@ -65,7 +65,7 @@ function App() {
 
       {/* LABEL SECTION */}
       <div
-        className="h-full flex flex-col justify-center items-center relative bg-center py-12 px-4 bg-white lg:border-y-2 lg:border-y-black"
+        className="h-full flex flex-col justify-center items-center relative bg-cover bg-center py-12 px-4 bg-white lg:border-y-2 lg:border-y-black"
         style={{ backgroundImage: bgImage, backgroundPosition: "center top" }}
       >
         <h1 className="font-bold text-3xl md:text-6xl  text-center kanit-bold">
@@ -120,7 +120,7 @@ function App() {
           คอร์สนี้ได้อะไรบ้าง ?
         </h1>
         <div
-          className="relative bg-cover bg-center"
+          className="relative bg-cover bg-animate bg-center"
           style={{ backgroundImage: "url('/bg-22.png')" }}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 max-w-[1200px] mx-auto">
@@ -246,7 +246,7 @@ function App() {
             }
         }
 
-        .bg-cover {
+        .bg-animate {
             animation: rotateBackground 30s infinite linear;
         }
     `}</style>
