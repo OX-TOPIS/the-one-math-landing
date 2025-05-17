@@ -19,9 +19,9 @@ function App() {
 
   useEffect(() => {
     const updateBackground = () => {
-      if (window.innerWidth > 1024) {
+      if (window.innerWidth >= 1024) {
         setBgImage(
-          "linear-gradient(to top right, #00ADFE, #9403FD, #FF12DC, #FFB912)"
+          ""
         );
       } else {
         setBgImage("url('/Mask.png')");
@@ -65,8 +65,8 @@ function App() {
 
       {/* LABEL SECTION */}
       <div
-        className="h-full flex flex-col justify-center items-center relative bg-cover bg-center p-12"
-        style={{ backgroundImage: bgImage }}
+        className="h-full flex flex-col justify-center items-center relative bg-cover bg-center py-12 px-4 bg-white lg:border-y-2 lg:border-y-black"
+        style={{ backgroundImage: bgImage, backgroundPosition: "center top" }}
       >
         <h1 className="font-bold text-3xl md:text-6xl  text-center kanit-bold">
           ไม่เก่งเลข
@@ -78,7 +78,7 @@ function App() {
         <h1 className="font-semibold text-3xl md:text-6xl text-center kanit-semibold">
           หมดสิทธิ์สอบติดมหาลัย?
         </h1>
-        <div className="text-center my-10">
+        <div className="text-center my-10 text-base md:text-xl">
           <p>ความจริงที่น่าตกใจ</p>
           <p>เด็ก ม.ปลาย “ส่วนใหญ่” สอบไม่ติด เพราะ “คะแนนคณิต”</p>
           <p>แต่น้องไม่จำเป็นต้องเป็นหนึ่งในนั้น</p>
@@ -96,7 +96,7 @@ function App() {
           </a>
         </div>
       </div>
-      <div className="text-center mt-10 mx-a">
+      <div className="text-center mt-10 mx-a text-base md:text-xl">
         <p>ถ้าไม่เก่งคณิต → ต้องเริ่มจากพื้นฐาน</p>
         <div className="my-4">
           <div className="flex justify-center items-center gap-2 ">
@@ -130,7 +130,7 @@ function App() {
                 <img src="/Frame (1).png" alt="Description1" className="w-7" />
                 <h2 className="kanit-semibold text-xl">ปรับพื้นฐานก่อนเรียน</h2>
               </div>
-              <p className="kanit-regular">
+              <p className="kanit-regular md:text-lg mt-2">
                 ถ้าน้องพื้นฐานน้อยกลัวเรียนไม่รู้เรื่อง ไม่ต้องกังวล
                 พี่ปูพื้นฐานใหม่ให้หมด ตาม 13
                 บทที่จำเป็นที่ต้องรู้ก่อนเริ่มเรียน
@@ -150,7 +150,7 @@ function App() {
                     เรียนได้จนกว่าจะสอบติด
                   </h2>
                 </div>
-                <p className="kanit-regular">
+                <p className="kanit-regular md:text-lg mt-2">
                   ไม่มีอายุคอร์ส พี่จะส่งฟอร์มให้ยืนยันตัวตนทุกๆ 6 เดือน
                   เช่นถ้าตอนนี้อยู่ม.4 ก็สามารถอยู่ในคอร์สได้จบจนม.6 เลยย
                 </p>
@@ -167,7 +167,7 @@ function App() {
                   />
                   <h2 className="kanit-semibold text-xl">เอกสารการสอน(PDF)</h2>
                 </div>
-                <p className="kanit-regular">
+                <p className="kanit-regular md:text-lg mt-2">
                   ได้รับครบทั้งพื้นฐาน เนื้อหาคณิตศาสตร์ ม.ปลาย
                   ซึ่งจะมีการบ้านให้ฝึกทำ และตะลุยโจทย์ คณิตศาสตร์ประยุกต์ 1
                 </p>
@@ -181,7 +181,7 @@ function App() {
                   ตะลุยโจทย์ข้อสอบเก่า A-Level 1
                 </h2>
               </div>
-              <p className="kanit-regular">
+              <p className="kanit-regular md:text-lg mt-2">
                 สอนเทคนิคการแก้โจทย์รูปแบบที่เหมาะสมสำหรับโจทย์แต่ละข้อ
                 เพื่อให้น้องทำโจทย์ได้แม่นยำและรวดเร็วที่สุด
               </p>
@@ -193,7 +193,7 @@ function App() {
                   เรียนเนื้อหาม.ปลายครบ 15 บท
                 </h2>
               </div>
-              <p className="kanit-regular">
+              <p className="kanit-regular md:text-lg mt-2">
                 เรียนตั้งแต่เนื้อหา ไปจนถึง ตะลุยโจทย์ เรียนที่โรงเรียนไม่เข้าใจ
                 ไม่ต้องกังวล พี่สอนใหม่หมด
               </p>
@@ -205,7 +205,7 @@ function App() {
                   การบ้านท้ายบท ครบ 15 บท
                 </h2>
               </div>
-              <p className="kanit-regular">
+              <p className="kanit-regular md:text-lg mt-2">
                 ในแต่ละน้องจะได้ฝึกทำโจทย์ระดับความยากคณิตศาสตร์ประยุกต์ 1
                 และยังมีโจทย์ปีเก่าๆที่พี่คัดมาแล้วว่า "ควรฝึก"
               </p>
@@ -217,7 +217,7 @@ function App() {
                   ปรึกษาได้ตลอดการเรียน
                 </h2>
               </div>
-              <p className="kanit-regular">
+              <p className="kanit-regular md:text-lg mt-2">
                 ทำโจทย์ไม่เป็น เริ่มต้นไม่ถูก กังวลเรื่องการวางแผนเข้ามหาลัย
                 ปรึกษาพี่ได้โดยตรง พี่จะทำให้น้องไปต่อได้เอง
                 "อยู่ข้างๆจนกว่าจะสอบติด"
@@ -225,22 +225,6 @@ function App() {
             </div>
           </div>
         </div>
-
-        <style jsx>{`
-          /* เพิ่มแอนิเมชันสำหรับพื้นหลัง */
-          @keyframes rotateBackground {
-            0% {
-              background-position: center top;
-            }
-            100% {
-              background-position: 100% 100%;
-            }
-          }
-
-          .bg-cover {
-            animation: rotateBackground 30s infinite linear;
-          }
-        `}</style>
       </div>
       <div className="flex flex-col justify-center items-center">
         <a
@@ -260,14 +244,14 @@ function App() {
           <img
             src="/Profile_image 1.png"
             alt="Description of image"
-            className="max-w-[400px] border-spacing-2 border-green-100 mb-4 lg:mb-0 mx-auto lg:mx-0 lg:mr-4"
+            className="w-full max-w-[400px] aspect-[3/4] object-cover border-spacing-2 border-green-100 mb-4 lg:mb-0 mx-auto lg:mx-0 lg:mr-4 rounded-lg px-4 md:-px-0"
           />
           <div className="bg-white p-4 rounded-3xl bg-opacity-60">
             <div className="text-center">
               <h1 className="kanit-semibold text-xl">ประสบการณ์สอน</h1>
             </div>
             <div className="flex justify-center bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
-              <ul className="list-disc list-inside text-center space-y-4">
+              <ul className="list-disc list-inside text-center space-y-4 md:text-lg">
                 <li>สอนนักศึกษาคณะคณิตศาสตร์ประกันภัย มหาลัยวิทยาลัยมหิดล</li>
                 <li>สอนนักเรียนมัธยมศึกษา ม.ปลาย</li>
               </ul>
@@ -279,7 +263,7 @@ function App() {
               </h1>
               <div className="flex justify-center bg-tonelight1 w-full max-w-[550px] p-4 mx-auto rounded-md">
                 <div>
-                  <ul className="list-disc list-inside text-center space-y-4">
+                  <ul className="list-disc list-inside text-center space-y-4 md:text-lg">
                     <li>
                       จบการศึกษา คณะเทคโนโลยีสารสนเทศ แขนงวิศกรรมซอฟแวร์
                       ลาดกระบัง (เกียรตินิยม)
@@ -337,7 +321,7 @@ function App() {
       </h2>
       {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
       {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 mx-auto max-w-[1200px]">
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 mx-auto max-w-[1200px]">
         <img
           src="review1.png"
           className="w-full h-auto object-cover"
@@ -402,7 +386,7 @@ function App() {
         <h1 className="text-center m-5 mt-10 text-3xl kanit-semibold">
           สมัครคอร์สเรียน
         </h1>
-        <div className="bg-white w-full max-w-[550px] p-4 mx-auto rounded-md">
+        <div className="bg-white w-full max-w-[550px] p-4 mx-auto rounded-md md:text-lg">
           <p className="font-semibold text-xl">
             ถ้าน้องจริงจัง อยากเป็นคนหนึ่งที่ต้นทุนความรู้น้อย
             แต่สอบติดมหาลัยดัง
