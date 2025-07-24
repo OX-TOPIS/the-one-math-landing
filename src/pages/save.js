@@ -38,7 +38,7 @@ function App() {
       {/* NAVBAR */}
 
       <nav className="flex items-center justify-around">
-        <div className="flex items-center gap-2 text-xl m-1">
+        <div className="flex items-center gap-2 text-xl m-2">
           {/* <img
             src="/logo2 (2).png"
             alt="Description of image"
@@ -68,24 +68,23 @@ function App() {
         className="h-full flex flex-col justify-center items-center relative bg-cover bg-center py-12 px-4 bg-white lg:border-y-2 lg:border-y-black"
         style={{ backgroundImage: bgImage, backgroundPosition: "center top" }}
       >
-        <h1 className="font-bold text-3xl md:text-6xl  text-center kanit-semibold mb-3">
-          ช่วยให้น้อง
+        <h1 className="font-bold text-3xl md:text-6xl  text-center kanit-bold">
+          ไม่เก่งเลข
         </h1>
-        <h1 className="font-bold text-3xl md:text-6xl text-center kanit-bold mb-3">
-          ได้คะแนนคณิตเอเลเวลสูง
+        <h1 className="font-bold text-3xl md:text-6xl text-center kanit-bold">
+          =
         </h1>
         {/* <h1 className='font-bold text-2xl sm:text-base md:text-7xl text-center kanit-bold mb-4 md:mb-20'>อนิเมชันคณิตศาสตร์</h1> */}
-        <h1 className="font-semibold text-3xl md:text-6xl text-center kanit-semibold mb-3">
-          ผ่านการฝึกโจทย์ที่ตรงจุด
+        <h1 className="font-semibold text-3xl md:text-6xl text-center kanit-semibold">
+          หมดสิทธิ์สอบติดมหาลัย?
         </h1>
         <div className="text-center my-10 text-base md:text-xl">
-          <p>คอร์สที่จะช่วยให้น้องติดมหาลัยที่หวัง</p>
-          <p>และทำคะแนนคณิตได้สูง</p>
-          <p>จากการเรียนและฝึกโจทย์ที่เข้าเป้า</p>
-          
+          <p>ความจริงที่น่าตกใจ</p>
+          <p>เด็ก ม.ปลาย “ส่วนใหญ่” สอบไม่ติด เพราะ “คะแนนคณิต”</p>
+          <p>แต่น้องไม่จำเป็นต้องเป็นหนึ่งในนั้น</p>
         </div>
         <p className="font-semibold text-2xl md:text-2xl text-center kanit-semibold underline">
-          MATH Alevel 1&2 + alevelGPT
+          คอร์สคณิตศาสตร์ประยุกต์ 1
         </p>
         <div className=" w-full flex justify-center pt-4">
           <a
@@ -100,42 +99,22 @@ function App() {
         <p>**ราคาเปิดตัว จะหมดเขตเร็วๆนี้</p>
       </div>
       <div className="text-center mt-10 mx-a text-base md:text-xl">
-        <p className="kanit-semibold">ผลลัพธ์จริงจากประสบการณ์ของพี่โดยตรง</p>
+        <p>ถ้าไม่เก่งคณิต → ต้องเริ่มจากพื้นฐาน</p>
         <div className="my-4">
           <div className="flex justify-center items-center gap-2 ">
             {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
-            <p>พี่เป็นเด็กสามจังหวัดชายแดนใต้</p>
+            <p>อย่ากระโดดตะลุยโจทย์ทันที</p>
           </div>
           <div className="flex justify-center items-center gap-2 ">
             {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
-            <p>พี่ไม่คิดว่าตัวเองจะสอบเข้ามอดังได้เลยด้วยซ้ำ</p>
+            <p>เรียนใหม่ตั้งแต่พีชคณิตถึงตรีโกณ</p>
           </div>
           <div className="flex justify-center items-center gap-2 ">
             {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
-            <p>พี่ลองผิดลองถูกกับการทำโจทย์มามากมาย</p>
-          </div>
-          <div className="flex justify-center items-center gap-2 ">
-            {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
-            <p>เคยอยู่ในจุดที่ทำโจทย์เองไม่ได้เลย</p>
-          </div>
-          <div className="flex justify-center items-center gap-2 ">
-            {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
-            <p>จนสุดท้าย....พี่ก็เจอทางที่ถูกต้อง</p>
-          </div>
-          <div className="flex justify-center items-center gap-2 ">
-            {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
-            <p>จนพี่สอบติดคณะบัญชี ธรรมศาสตร์</p>
-          </div>
-          <div className="flex justify-center items-center gap-2 ">
-            {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
-            <p>ซึ่งคณะนี้ใช้ % คะแนนคณิตสูงมาก</p>
-          </div>
-          <div className="flex justify-center items-center gap-2 ">
-            {/* <div className="bg-black h-1 w-1 rounded-full"></div> */}
-            <p>น้องไม่จำเป็นต้องไปลองผิดลองถูกเอง</p>
+            <p>ทบทวนทุกสูตรสำคัญที่ออกสอบบ่อย</p>
           </div>
         </div>
-        <p>พี่เอาประสบการณ์ทั้งหมดมารวมไว้ในคอร์สนี้แล้ว</p>
+        <p>พื้นฐานแน่น = ต่อยอดได้ไกล</p>
       </div>
       {/* คอร์สนี้ได้อะไรบ้าง */}
       <div>
@@ -450,12 +429,6 @@ function App() {
               <FaRegCircleCheck />
               <p>ปรับพื้นฐานก่อนเรียน ด้วย 13 บทสำคัญ</p>
             </div>
-            <div className="flex items-center gap-2">
-              <FaRegCircleCheck />
-              <p>แถม! alevelGPT</p>
-            </div>
-             <p>ผู้ช่วยสำหรับน้องที่จะเตรียมสอบคณิตศาสตร์ alevel โดยเฉพาะ</p>
-            
           </div>
 
           <div className="md:flex justify-between gap-4 mt-4">
