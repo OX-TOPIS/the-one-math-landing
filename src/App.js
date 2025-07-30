@@ -264,6 +264,21 @@ function App() {
         <p>**ราคาเปิดตัว จะหมดเขตเร็วๆนี้</p>
       </div>
       
+       <style jsx>{`
+        /* เพิ่มแอนิเมชันสำหรับพื้นหลัง */
+        @keyframes rotateBackground {
+            0% {
+                background-position: center top;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        .bg-animate {
+            animation: rotateBackground 30s infinite linear;
+        }
+    `}</style>
       {/* ผู้สอน */}
       <div>
         <h1 className="text-center m-5 mt-10 text-3xl kanit-semibold">
@@ -351,20 +366,15 @@ function App() {
       </h2>
       {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
       {/* <img src="/image 3.png" alt="Description of image" className='w-10/12 rounded-lg m-auto'/> */}
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-4 mx-auto max-w-[1200px]">
+      <div className="grid md:grid-cols-2 gap-4 px-4 mx-auto max-w-[1200px]">
         <img
-          src="review1.png"
+          src="IMG_2594.jpg"
           className="w-full h-auto object-cover"
-          alt="Image 4"
-        />
-        <img
-          src="review2.png"
-          className="w-full h-auto object-cover my-auto"
           alt="Image 4"
         />
         <img
           src="review3.png"
-          className="w-full h-auto object-cover"
+          className="w-full h-auto object-cover my-auto"
           alt="Image 4"
         />
       </div>
@@ -492,7 +502,7 @@ function App() {
         {/* ขวา */}
         <div className="flex gap-4 justify-center md:justify-end md:flex-1">
           <a
-            href="https://www.instagram.com/ingfah.ap/"
+            href="https://www.instagram.com/ingfah_anthicha/"
             target="_blank"
             rel="noopener noreferrer"
           >
